@@ -12,6 +12,42 @@ body {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  display: flex;
+  justify-content: space-between;/* I added */
+  padding: 8px; /* I added */
+}
+
+.header-left { /* I added */
+  display: flex;
+}
+I
+.logo {
+  color: rebeccapurple;
+  font-size: 32px;
+  font-weight: 900;
+  font-style: italic;
+  padding-right: 8px;
+  margin-right: 8px;
+}
+
+a {
+  /* this removes the line under our links */
+  text-decoration: none;
+  color: rebeccapurple;
+  padding-right: 16px; /* I added */
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  /*justify-content: space-between; (I added, but removed, not needed)*/
+  padding-left: 0; /* I added */
+}
+
+.header-right { /* I added */
+  display: flex;/* I added */
+  /*justify-content: flex-end; (I added, but removed,not needed)*/
+  align-items: center;/* I added */
 }
 
 .profile-image {
@@ -22,27 +58,10 @@ body {
   height: 48px;
 }
 
-.logo {
-  color: rebeccapurple;
-  font-size: 32px;
-  font-weight: 900;
-  font-style: italic;
-}
-
-button {
-  border: none;
-  border-radius: 8px;
+.notifications {
   background: rebeccapurple;
   color: white;
+  border-radius: 8px;
   padding: 8px 24px;
-}
-
-a {
-  /* this removes the line under our links */
-  text-decoration: none;
-  color: rebeccapurple;
-}
-
-ul {
-  list-style-type: none;
+  margin-right: 8px; /* I added */
 }
